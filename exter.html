@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuidaCompu</title>
+    <link rel="stylesheet" href="exter2.css">
+</head>
+<body>
+<header>
+<div class="primera-seccion">
+    <img src="img/logo-removebg-preview.png">
+    <h1>CUIDA<span>COMPU</span></h1>
+
+    <input type="text" class="buscador" placeholder="🔍 buscar...">
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="inter.html">Catalogo</a>
+    </nav>
+</div>
+</header>
+
+<section class="titulo">
+    <h2>Componentes externos para el cuido de tu computadora</h2>
+    <article>
+        <nav>
+        <h3><a href="inter.html">regresar a partes internas</a></h3>
+        </nav>
+    </article>
+</section>
+
+<section class="cuadros">
+ 
+<p id="mensaje-no-encontrado">No hay de esos productos</p>
+
+    <article>
+        <img src="img/monitor.jpg">
+        <h3>Monitor</h3>
+        <p>Dispositivo que muestra imágenes, 
+        videos, textos y gráficos generados por la computadora.</p>
+        <h4>$99.00</h4>
+        <button class="btn-carrito">🛒 Agregar al carrito</button>
+    </article>
+
+    <article>
+        <img src="img/teclado.jpg">
+        <h3>Teclado</h3>
+        <p>Dispositivo de entrada que permite 
+        escribir textos, números y ejecutar diferentes comandos.</p>
+        <h4>$10.50</h4>
+        <button class="btn-carrito">🛒 Agregar al carrito</button>
+    </article>
+
+    <article>
+        <img src="img/gabinete.jpg">
+        <h3>Gabinete o torre</h3>
+        <p>structura que contiene y protege 
+        los principales componentes internos de la computadora.</p>
+        <h4>$70.00</h4>
+        <button class="btn-carrito">🛒 Agregar al carrito</button>
+    </article>
+
+    <article>
+        <img src="img/bocinas.jpg">
+        <h3>Bocinas</h3>
+        <p>Dispositivos que reproducen sonidos, 
+        música, videos y otros contenidos de audio.</p>
+        <h4>$15.00</h4>
+        <button class="btn-carrito">🛒 Agregar al carrito</button>
+    </article>
+
+    <article>
+        <img src="img/camara web.jpg">
+        <h3>Camara Web</h3>
+        <p>Dispositivo que permite capturar
+        imágenes y transmitir video durante videollamadas.</p>
+        <h4>$25.00</h4>
+        <button class="btn-carrito">🛒 Agregar al carrito</button>
+    </article>
+
+    <article>
+        <img src="img/mouse.jpg">
+        <h3>Mouse</h3>
+        <p>Dispositivo que permite mover el cursor, 
+        seleccionar opciones y controlar elementos en la pantalla.</p>
+        <h4>$13.95</h4>
+        <button class="btn-carrito">🛒 Agregar al carrito</button>
+    </article>
+ 
+     <article>
+        <img src="img/microfono.jpg">
+        <h3>Microfono</h3>
+        <p>Dispositivo que captura la voz y otros 
+        sonidos para introducirlos en la computadora.</p>
+        <h4>$35.00</h4>
+        <button class="btn-carrito">🛒 Agregar al carrito</button>
+    </article>    
+
+    <article>
+        <img src="img/audifonos.jpg">
+        <h3>Audofonos</h3>
+        <p>ispositivo que permite 
+        escuchar sonidos, música y videos de forma personal.</p>
+        <h4>$19.50</h4>
+        <button class="btn-carrito">🛒 Agregar al carrito</button>
+    </article> 
+
+</section>
+
+<!-- SECCiON DE CARRITO -->
+
+<div id="carrito">
+    <button id="abrir-carrito">▲</button>
+    <h2>🛒 Mi carrito</h2>
+    <div id="productos-carrito"></div>
+    <h3>Total: $<span id="total">0.00</span></h3>
+    <div class="botones-carrito">
+        <button id="vaciar-carrito">Vaciar</button>
+        <button id="pagar-carrito">Pagar</button>
+    </div>
+</div>
+
+<!-- SECCIÓN DE INICIO DE SESIÓN -->
+
+<section id="seccion-login">
+    <div class="cuadro-pago">
+        <h2>Iniciar sesión</h2>
+        <label>Correo electrónico</label>
+        <input type="email" id="correo" placeholder="Agregar correo electrónico">
+        <label>Contraseña</label>
+        <input type="password" id="contrasena" placeholder="Agregar contraseña">
+        <button id="continuar-pago">Continuar</button>
+    </div>
+</section>
+
+
+<!-- SECCIÓN DE PAGO -->
+
+<section id="seccion-pago">
+    <div class="cuadro-pago">
+        <h2>💳 Datos de pago</h2>
+        <label>Nombre del titular</label>
+        <input type="text" id="nombre-titular" placeholder="Nombre completo">
+        <label>Número de tarjeta</label>
+        <input type="text" id="numero-tarjeta" placeholder="1234 5678 9012 3456" maxlength="19">
+        <div class="datos-tarjeta">
+            <div>
+                <label>Fecha de vencimiento</label>
+                <input type="text" id="vencimiento" placeholder="MM/AA" maxlength="5">
+            </div> 
+            <div>
+                <label>CVV</label>
+                <input type="password" id="cvv" placeholder="123" maxlength="4">
+            </div>
+        </div>
+        <label>Dirección de facturación</label>
+        <input type="text" id="direccion" placeholder="Dirección">
+        <label>Ciudad</label>
+        <input type="text" id="ciudad" placeholder="Ciudad">
+        <button id="confirmar-pago">Confirmar pago</button>
+
+    </div>
+</section>
+
+
+<!-- SECCIÓN DE COMPRA REALIZADA -->
+
+<section id="seccion-confirmado">
+    <div class="cuadro-pago">
+        <h2>✅ Compra realizada</h2>
+        <p>Tu pago ha sido procesado correctamente.</p>
+        <p>Gracias por comprar en CuidaCompu.</p>
+        <button id="volver-inicio">Volver al catálogo</button>
+    </div>
+</section>
+
+<!--- SECCIÓN DE FACTURA -->
+
+<button id="btn-factura">🧾 Historial de facturas</button>
+
+<section id="factura">
+    <h2>CUIDA<span>COMPU</span></h2>
+    <p class="subtitulo-factura">Historial de facturas</p>
+
+    <div id="lista-facturas"></div>
+
+    <div id="detalle-factura" style="display: none;">
+        <hr>
+
+        <h3 id="titulo-factura">Factura</h3>
+
+        <p><strong>Cliente:</strong>
+            <span id="cliente-factura"></span>
+        </p>
+
+        <p><strong>Fecha:</strong>
+            <span id="fecha-factura"></span>
+        </p>
+
+        <h3>Productos comprados</h3>
+        <div id="productos-factura"></div>
+
+        <hr>
+
+        <h3 class="total-factura">
+            Total: $<span id="total-factura">0.00</span>
+        </h3>
+
+        <p class="gracias-factura">
+            ¡Gracias por comprar en CuidaCompu!
+        </p>
+    </div>
+
+    <div class="botones-factura">
+        <button id="vaciar-historial">Vaciar historial</button>
+        <button id="cerrar-factura">Cerrar</button>
+    </div>
+</section>
+
+
+<script src="carrito.js"></script>
+<script src="busqueda.js"></script>
+
+</body>
+</html>
